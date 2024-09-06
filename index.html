@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biodental - Providing Exceptional Dental Care</title>
+
+  <!-- 
+    - favicon
+  -->
+  <!-- <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml"> -->
+  <link rel="shortcut icon" href="biodental_icon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - meta description for dental services 
+  -->
+  <meta name="description" content="Biodental provides personalized, high-quality dental care in Lagos. Services include dental check-ups, root canals, orthodontics, implants, and more. Contact us at +234 818 736 0486.">
+  
+  <!-- 
+    - theme color 
+  -->
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- 
+    - custom styles for Biodental branding 
+  -->
+  <style>
+    :root {
+      --primary-color: #007bff; /* Blue color */
+      --secondary-color: #ffffff; /* White color */
+    }
+  </style>
+</head>
+
+
+<body>
+
+  <header class="header" data-header>
+
+    <div class="overlay" data-overlay></div>
+  
+    <div class="header-top">
+      <div class="container">
+  
+        <ul class="header-top-list">
+  
+          <li>
+            <a href="mailto:biodentalclinicng@gmail.com" class="header-top-link">
+              <ion-icon name="mail-outline"></ion-icon>
+              <span>biodentalclinicng@gmail.com</span>
+            </a>
+          </li>
+  
+          <li>
+            <a href="#" class="header-top-link">
+              <ion-icon name="location-outline"></ion-icon>
+              <address>No 9, Anifowose Street, Lagos Resource Center, off Adeola Odeku, Victoria Island, Lagos</address>
+            </a>
+          </li>
+  
+        </ul>
+  
+        <div class="wrapper">
+          <ul class="header-top-social-list">
+  
+            <li>
+              <a href="https://www.facebook.com/Biodental" class="header-top-social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+  
+            <li>
+              <a href="https://www.instagram.com/biodentalng" class="header-top-social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+  
+          </ul>
+          <a href="tel:+2347082745653">
+  
+            <button class="header-top-btn">Call Us: +2347082745653</button>
+          </a>
+        </div>
+  
+      </div>
+    </div>
+  
+    <div class="header-bottom">
+      <div class="container">
+        
+        <!-- Flexbox container to hold the logo and text -->
+        <div class="logo-container">
+          <a href="index.html" class="logo">
+            <img src="Logo.png" alt="Biodental logo">
+          </a>
+          <span class="clinic-name">BIODENTAL</span> 
+       
+          <span class="clinic-name">CLINIC</span>  <!-- Add the clinic name -->
+        </div>
+        
+        <nav class="navbar" data-navbar>
+          <div class="navbar-top">
+            <a href="index.html" class="logo">
+              <img src="Logo.png" alt="Biodental logo">
+            </a>
+            <button class="nav-close-btn" data-nav-close-btn aria-label="Close Menu">
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+          </div>
+          
+          <div class="navbar-bottom">
+            <ul class="navbar-list">
+              <li><a href="#" class="navbar-link" data-nav-link>Home</a></li>
+              <li><a href="#about" class="navbar-link" data-nav-link>About</a></li>
+              <li><a href="#service" class="navbar-link" data-nav-link>Services</a></li>
+              <li><a href="#footer" class="navbar-link" data-nav-link>Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+        
+        <div class="header-bottom-actions">
+          <a href="#appointment">
+            <button class="header-bottom-actions-btn" aria-label="Services">
+              <ion-icon name="calendar-outline"></ion-icon>
+              <span>Appointment</span>
+            </button>
+          </a>
+    
+          <button class="header-bottom-actions-btn" aria-label="Profile">
+            <ion-icon name="person-outline"></ion-icon>
+            <a href="http://wa.me/+2348187360486">
+              <span>Contact Expert</span>
+            </a>
+          </button>
+    
+          <a href="#service">
+            <button class="header-bottom-actions-btn" aria-label="Services">
+              <ion-icon name="medkit-outline"></ion-icon>
+              <span>Our Services</span>
+            </button>
+          </a>
+    
+          <button class="header-bottom-actions-btn" data-nav-open-btn aria-label="Open Menu">
+            <ion-icon name="menu-outline"></ion-icon>
+            <span>Menu</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    
+  
+  </header>
+  
+
+
+
+
+
+  <main>
+    <article>
+  
+      <!-- 
+        - #HERO
+      -->
+  
+      <section class="hero" id="home">
+        <div class="container">
+      
+          <div class="hero-content">
+            <p class="hero-subtitle">
+              <ion-icon name="home"></ion-icon>
+              <span>Dental Clinic</span>
+            </p>
+            <h2 class="h1 hero-title">Experience Professional Dental Care at Biodental Clinic.</h2>
+            <p class="hero-text">
+              At Biodental, we prioritize your comfort, offering a wide range of services to keep your smile healthy and beautiful.
+            </p>
+            <a href="#appointment" class="btn">Book an Appointment Today</a>
+          </div>
+      
+          <div class="hero-banner carousel">
+            <img src="https://i.pinimg.com/736x/1f/fd/7c/1ffd7cc944b1ad8cb2db07aa0cc68b53.jpg" alt="Dental clinic image 1" class="carousel-image active">
+            <img src="https://i.pinimg.com/564x/d7/78/04/d77804d5f2e1fafca022adff48aa8c59.jpg" alt="Dental clinic image 2" class="carousel-image">
+            <img src="https://i.pinimg.com/564x/0a/b2/d5/0ab2d55e1e42fbb80e517f23dbd92d8f.jpg" alt="Dental clinic image 3" class="carousel-image">
+          </div>
+      
+        </div>
+      </section>
+      
+  
+      <!-- 
+        - #ABOUT
+      -->
+  
+      <section class="about" id="about">
+        <div class="container">
+      
+          <!-- <figure class="about-banner">
+            <img src="" alt="Dental office" class="w-100">
+          </figure> -->
+      
+          <div class="about-content">
+      
+            <p class="section-subtitle">Why Choose Us</p>
+      
+            <h2 class="h2 section-title">Personalized, High-Quality Dental Care</h2>
+      
+            <p class="about-text">
+              At Biodental, our mission is to provide personalized, high-quality dental care that prioritizes patient comfort, education, and exceptional results. We strive to build lasting relationships, promote optimal oral health, and enhance the well-being of our community.
+            </p>
+      
+            <ul class="about-list">
+              <!-- Qualified Doctors -->
+              <li class="about-item">
+                <div class="about-item-icon">
+                  <ion-icon name="medkit-outline"></ion-icon>
+                </div>
+                <div>
+                  <h3 class="h3 card-title">Qualified Doctors</h3>
+                  <p class="about-item-text">
+                    We have well-trained clinicians and specialists to offer the best dental services.
+                  </p>
+                </div>
+              </li>
+      
+              <!-- Medical Treatment -->
+              <li class="about-item">
+                <div class="about-item-icon">
+                  <ion-icon name="bandage-outline"></ion-icon>
+                </div>
+                <div>
+                  <h3 class="h3 card-title">Medical Treatment</h3>
+                  <p class="about-item-text">
+                    We offer top-notch dental care, like implants, orthodontic care, and adequate oral hygiene procedures.
+                  </p>
+                </div>
+              </li>
+      
+              <!-- Best Customer Service -->
+              <li class="about-item">
+                <div class="about-item-icon">
+                  <ion-icon name="people-outline"></ion-icon>
+                </div>
+                <div>
+                  <h3 class="h3 card-title">Best Customer Service</h3>
+                  <p class="about-item-text">
+                    We are patient-centered and always ready to answer any questions you may have. Ensuring our patients smile is optimum is our greatest goal.
+                  </p>
+                </div>
+              </li>
+            </ul>
+      
+            <p class="callout">
+              "We’re committed to improving your oral health and giving you the best possible care."
+            </p>
+      
+            <a href="#service" class="btn">Learn More About Our Services</a>
+      
+          </div>
+        </div>
+      </section>
+      
+  
+      <!-- 
+        - #SERVICE
+      -->
+  
+      <section class="service" id="service">
+        <div class="container">
+  
+          <p class="section-subtitle">Our Services</p>
+  
+          <h2 class="h2 section-title">Comprehensive Dental Care</h2>
+  
+          <ul class="service-list">
+  
+            <li>
+              <div class="service-card">
+                <div class="card-icon">
+                  <img src="https://i.pinimg.com/564x/c6/5b/61/c65b610cbe9926c9924c07202796584a.jpg" alt="Service icon">
+                </div>
+                <h3 class="h3 card-title">Dental Check-ups</h3>
+                <p class="card-text">Routine exams to ensure your oral health is on track.</p>
+              </div>
+            </li>
+  
+            <li>
+              <div class="service-card">
+                <div class="card-icon">
+                  <img src="https://i.pinimg.com/564x/ed/21/76/ed21766aac0b627c4469c05b19dc9d42.jpg" alt="Service icon">
+                </div>
+                <h3 class="h3 card-title">Teeth Whitening</h3>
+                <p class="card-text">Get a brighter smile with our professional teeth whitening services.</p>
+              </div>
+            </li>
+  
+            <li>
+              <div class="service-card">
+                <div class="card-icon">
+                  <img src="https://i.pinimg.com/564x/77/c1/bd/77c1bd0addb33b0977c81bbd37493c34.jpg" alt="Service icon">
+                </div>
+                <h3 class="h3 card-title">Dental Implants</h3>
+                <p class="card-text">Restore your smile with durable dental implants.</p>
+              </div>
+            </li>
+  
+            <li>
+              <div class="service-card">
+                <div class="card-icon">
+                  <img src="https://i.pinimg.com/564x/88/31/43/883143686ab753154360b5449cac6612.jpg" alt="Service icon">
+                </div>
+                <h3 class="h3 card-title">Orthodontics</h3>
+                <p class="card-text">Straighten your teeth with modern orthodontic solutions.</p>
+              </div>
+            </li>
+  
+          </ul>
+  
+        </div>
+      </section>
+  
+      <!-- 
+        - #APPOINTMENT FORM
+      -->
+  
+      <section class="appointment" id="appointment">
+        <div class="container">
+          <h2 class="h2 section-title">Book an Appointment</h2>
+          <form id="appointment-form" onsubmit="sendEmail(event)">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="user_name" placeholder="Enter your full name" required>
+            </div>
+      
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="user_email" placeholder="Enter your email address" required>
+            </div>
+      
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="user_phone" placeholder="Enter your phone number" required>
+            </div>
+      
+            <div class="form-group">
+              <label for="service">What would you like to do?</label>
+              <select id="service" name="user_service" required>
+                <option value="" disabled selected>Select a service</option>
+                <option value="check-up">Dental Check-up</option>
+                <option value="whitening">Teeth Whitening</option>
+                <option value="implants">Dental Implants</option>
+                <option value="orthodontics">Orthodontics</option>
+              </select>
+            </div>
+      
+            <div class="form-group">
+              <label for="patient-type">Are you a new or existing patient?</label>
+              <select id="patient-type" name="user_patient_type" required>
+                <option value="" disabled selected>Select patient type</option>
+                <option value="new">New Patient</option>
+                <option value="existing">Existing Patient</option>
+              </select>
+            </div>
+      
+            <div class="form-group">
+              <label for="preferred-date">Preferred Appointment Date</label>
+              <input type="date" id="preferred-date" name="user_preferred_date" required>
+            </div>
+      
+            <div class="form-group">
+              <label for="preferred-time">Preferred Time</label>
+              <input type="time" id="preferred-time" name="user_preferred_time" required>
+            </div>
+      
+            <button type="submit" class="btn">Submit</button>
+          </form>
+        </div>
+      </section>
+      
+      
+      
+      
+      
+      <!-- 
+        - #CONTACT INFO
+      -->
+  
+      <!-- <section class="contact-info" id="contact">
+        <div class="container">
+  
+          <h2 class="h2 section-title">Get In Touch</h2>
+  
+          <ul class="contact-list">
+            <li>
+              <ion-icon name="location-outline"></ion-icon>
+              <span>No 9, Anifowose Street, Lagos Resource Center, off Adeola Odeku, Victoria Island, Lagos</span>
+            </li>
+  
+            <li>
+              <ion-icon name="call-outline"></ion-icon>
+              <span>Call: 07082745653</span>
+            </li>
+  
+            <li>
+              <ion-icon name="mail-outline"></ion-icon>
+              <span>Email: biodentalclinicng@gmail.com</span>
+            </li>
+  
+            <li>
+              <ion-icon name="logo-whatsapp"></ion-icon>
+              <span>WhatsApp: +234 818 736 0486</span>
+            </li>
+  
+            <li>
+              <ion-icon name="logo-instagram"></ion-icon>
+              <span>Instagram: @biodentalng</span>
+            </li>
+  
+            <li>
+              <ion-icon name="logo-facebook"></ion-icon>
+              <span>Facebook: Biodental</span>
+            </li>
+          </ul>
+  
+        </div>
+      </section> -->
+  
+    </article>
+  </main>
+  
+
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer" id="footer">
+
+    <div class="footer-top">
+      <div class="container">
+  
+        <div class="footer-brand">
+  
+          <a href="#" class="logo">
+            <img src="Logo.png" alt="Biodental logo">
+          </a>
+  
+          <p class="section-text">
+            Start Your Free Dental Consultation Today.
+            We are available 6 days a week, with flexible hours to accommodate your needs.
+          </p>
+  
+          <ul class="contact-list">
+  
+            <li>
+              <a href="#" class="contact-link">
+                <ion-icon name="location-outline"></ion-icon>
+  
+                <address>No 9, Anifowose Street, Lagos Resource Center, off Adeola Odeku, Victoria Island, Lagos</address>
+              </a>
+            </li>
+  
+            <li>
+              <a href="tel:+2348187360486" class="contact-link">
+                <ion-icon name="call-outline"></ion-icon>
+  
+                <span>+234 818 736 0486 (WhatsApp)</span>
+              </a>
+            </li>
+  
+            <li>
+              <a href="tel:07082745653" class="contact-link">
+                <ion-icon name="call-outline"></ion-icon>
+  
+                <span>Call: 0708 274 5653</span>
+              </a>
+            </li>
+  
+            <li>
+              <a href="mailto:biodentalclinicng@gmail.com" class="contact-link">
+                <ion-icon name="mail-outline"></ion-icon>
+  
+                <span>biodentalclinicng@gmail.com</span>
+              </a>
+            </li>
+  
+          </ul>
+  
+          <ul class="social-list">
+  
+            <li>
+              <a href="https://www.facebook.com/Biodental" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+  
+            <li>
+              <a href="https://www.instagram.com/biodentalng" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+  
+          </ul>
+  
+        </div>
+  
+        <div class="footer-link-box">
+  
+          <ul class="footer-list">
+  
+            <li>
+              <p class="footer-list-title">Company</p>
+            </li>
+  
+            <li>
+              <a href="#" class="footer-link">About Us</a>
+            </li>
+  
+            <li>
+              <a href="#" class="footer-link">Our Services</a>
+            </li>
+  
+            <li>
+              <a href="#" class="footer-link">Book Appointment</a>
+            </li>
+  
+            <li>
+              <a href="#" class="footer-link">FAQ</a>
+            </li>
+  
+            <li>
+              <a href="#" class="footer-link">Contact Us</a>
+            </li>
+  
+          </ul>
+  
+          <ul class="footer-list">
+  
+            <li>
+              <p class="footer-list-title">Services</p>
+            </li>
+  
+            <li>
+              <a href="#" class="footer-link">Dental Check-ups</a>
+            </li>
+  
+            <li>
+              <a href="#" class="footer-link">Root Canals</a>
+            </li>
+  
+            <li>
+              <a href="#" class="footer-link">Teeth Whitening</a>
+            </li>
+  
+            <li>
+              <a href="#" class="footer-link">Orthodontics</a>
+            </li>
+  
+            <li>
+              <a href="#" class="footer-link">Implants</a>
+            </li>
+  
+          </ul>
+  
+          <ul class="footer-list">
+  
+            <li>
+              <p class="footer-list-title">Quick Links</p>
+            </li>
+  
+            <li>
+              <a href="#" class="footer-link">Privacy Policy</a>
+            </li>
+  
+            <li>
+              <a href="#" class="footer-link">Terms & Conditions</a>
+            </li>
+  
+            <li>
+              <a href="#" class="footer-link">Our Mission</a>
+            </li>
+  
+            <li>
+              <a href="#" class="footer-link">Why Choose Us</a>
+            </li>
+  
+          </ul>
+  
+        </div>
+  
+      </div>  
+    </div>
+  </footer>
+  
+ <!-- Add EmailJS script here, just before the closing body tag -->
+ <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+ <script type="text/javascript">
+     (function() {
+         emailjs.init("rPUDdMZRusO_asszr"); // Initialize EmailJS with your Public Key
+     })();
+
+     function sendEmail(e) {
+         e.preventDefault(); // Prevent the form from submitting the traditional way
+
+         emailjs.sendForm('service_1709qbs', 'template_tcllbds', '#appointment-form')
+           .then(function(response) {
+               alert('Your appointment request has been successfully submitted.');
+           }, function(error) {
+               alert('Failed to send your request. Please try again.');
+           });
+
+         document.getElementById('appointment-form').reset(); // Optional: Reset the form after submission
+     }
+ </script>
+ 
+<script src="script.js"></script> 
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+    
+
+</html>
